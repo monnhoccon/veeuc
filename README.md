@@ -14,13 +14,13 @@ pentesters.<br>
 make sure on your terminal console was already<br>
 install PHP cli, git and nano/vieditor<br>
 using git:<br>
-git clone https://github.com/dbgid/dbgid-veeu.git<br>
+git clone https://github.com/pemiu01/veeuc.git<br>
 <br>
 wait until proccess clone was successfully<br>
 if was done, you will see folder "dbgid-veeu"<br>
 
 download file:<br>
-visit https://github.com/dbgid/dbgid-veeu then download<br>
+visit https://github.com/pemiu01/veeuc then download<br>
 as zip file. make sure your remember path of download<br>
 example for user android w/ termux:<br>
 your download storage is "/sdcard/Download"<br>
@@ -61,30 +61,3 @@ debian: apt-get install packagename (for install new package)<br>
 centos: yum install packagename (for install new package)<br>
 done.<br>
 
-# USAGE token.sh
-this scripts only work for rooted device only<br>
-on your device must have installed terminal emulator or script manager<br>
-this scripts can't work on termux, because termux can't be root as android shell<br>
-remember this scripts only for rooted device, can't work for nonroot device<br>
-usage:<br>
-open terminal emulator -> then input command like bellow:<br>
-su [enter]
-//root@android:/<br>
-then change dir to "dbgid-veeu"<br>
-cd /sdcard/pathyourfolderafterclone/dbgid-veeu-master [enter]<br>
-//root@android:/sdcard/pathyourfolderafterclone/dbgid-veeu-master<br>
-sh token.sh [enter]<br>
-you can get auth_token easy way and token saved as txt file<br>
-default stored of token is: /sdcard/ and file name is : token.txt<br>
-you have to push this scripts into /system/xbin<br>
-follow this command:<br>
-make sure on terminal was root user<br>
-//mount system<br>
-mount -o remount,rw /system [enter]<br>
-cp token.sh /system/xbin/token [enter]<br>
-chmod 775 /system/xbin/token [enter]<br>
-//mount system again to read/open<br>
-mount -o remount,ro /system [enter]<br>
-done, if you want to get auth_token veeu quickly<br>
-just type "token" on your terminal emulator<br>
-make sure you was already login on veeu apps<br>
